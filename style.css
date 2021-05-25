@@ -24,6 +24,11 @@ body{
     grid-area: menu;
     display: grid;
     grid-template-columns: 60% 40%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
 }
 
     .menu > h2{
@@ -31,9 +36,15 @@ body{
     padding: 0px;
     }
 
+    .menu>h2>a{
+        text-decoration: none;
+        color: purple;
+    }
+
     .menu > ul{
         grid-column: 2/3;
         text-align: right;
+        padding-top: 5px;
     }
 
     li{
@@ -49,6 +60,10 @@ body{
 
 .principal>p{
     grid-area: primerP;
+}
+
+.principal>p:hover{
+    cursor: pointer;
 }
 
 .cuerpoIzquierda{
@@ -91,7 +106,13 @@ body{
 
 .cuerpoDerecha{
     grid-area: derecha;
-    font-size: 1.45em;
+    font-size: 1.2em;
+}
+
+.cuerpoDerecha>p{
+    border-top: solid;
+    border-width: 1px;
+    padding: 5px;
 }
 
 button{
@@ -102,4 +123,8 @@ button{
     padding-right: 20px;
     border: none;
     color: white;
+}
+
+button:hover{
+    box-shadow:5px 5px 5px -2px rgba(0,0,0,0.43)
 }
